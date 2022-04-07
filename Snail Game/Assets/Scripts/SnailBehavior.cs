@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SnailBehavior : MonoBehaviour
 {
-    private float speed = 5.0f;
+    private float speed = 10.0f;
     private float turnSpeed = 45.0f;
     private float horizontalInput;
     private float forwardInput;
@@ -21,6 +21,6 @@ public class SnailBehavior : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
         //transform.Translate(Vector3.forward * Time.deltaTime * speed * -horizontalInput);
-        transform.Translate(Vector3.up * Time.deltaTime * speed * forwardInput); //issuw with this line
+        transform.Translate(Vector3.left * Time.deltaTime * speed * -forwardInput); //issuw with this line
     }
 }
