@@ -16,6 +16,6 @@ public class StoneCode : MonoBehaviour
     {
         // Move Vehicle Forward
         // Vector*Time*Meters per second
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        transform.Translate(Vector3.left * Time.deltaTime * speed);
     }
 }
