@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class SnailBehavior : MonoBehaviour
 {
-    private float speed = 10.0f;
-    private float turnSpeed = 45.0f;
-    private float horizontalInput;
-    private float forwardInput;
+    public float speed = 10.0f;
     public float zRange;
+    private float forwardInput;
     // Start is called before the first frame update
     void Start()
     {

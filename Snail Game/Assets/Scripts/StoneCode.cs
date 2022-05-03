@@ -5,7 +5,7 @@ using UnityEngine;
 public class StoneCode : MonoBehaviour
 {
     public float speed = 5.0f;
-
+    public float BoundaryX = -15f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,5 +17,9 @@ public class StoneCode : MonoBehaviour
         // Move Vehicle Forward
         // Vector*Time*Meters per second
         transform.Translate(Vector3.left * Time.deltaTime * speed);
+        if (transform.position.x < BoundaryX)
+        {
+            Destroy(gameObject);
+        }
     }
 }
