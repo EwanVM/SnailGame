@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1913898703755470172}
   - component: {fileID: 2432306522176886084}
   - component: {fileID: 6243079974133147413}
+  - component: {fileID: -8568320166704477804}
   m_Layer: 0
   m_Name: stone7_fbx
   m_TagString: Untagged
@@ -114,3 +115,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &-8568320166704477804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112436931534734473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae96f31fb59cfeb43a0aad84b1a6eb8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  BoundaryX: -15
