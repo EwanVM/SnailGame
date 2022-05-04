@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 590944893885864350}
   - component: {fileID: 6043240733888097190}
   - component: {fileID: 2785750134769937928}
-  - component: {fileID: 5994038304698455244}
+  - component: {fileID: -2282958250219404187}
   m_Layer: 0
   m_Name: stone6_fbx
   m_TagString: Untagged
@@ -28,14 +28,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383600350711937099}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 34.7, y: 2.21, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &3447367018900434260
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.20106481, y: 0.24804717, z: 0.29023305}
   m_Center: {x: 0.046452202, y: 0.02281924, z: -0.014032364}
---- !u!114 &5994038304698455244
+--- !u!114 &-2282958250219404187
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,5 +127,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae96f31fb59cfeb43a0aad84b1a6eb8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  BoundaryX: -15

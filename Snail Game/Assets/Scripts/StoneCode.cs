@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class StoneCode : MonoBehaviour
 {
-    public float speed = 5.0f;
-    public float BoundaryX = -15f;
+    private float speed = 10.0f;
+    private float BoundaryX = -37f;
     // Start is called before the first frame update
     void Start()
     {

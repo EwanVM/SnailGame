@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &112436931534734473
+--- !u!1 &8696898267526010787
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 775925801214484019}
-  - component: {fileID: 4425771740466778518}
-  - component: {fileID: 1913898703755470172}
-  - component: {fileID: 2432306522176886084}
-  - component: {fileID: 6243079974133147413}
-  - component: {fileID: -8568320166704477804}
+  - component: {fileID: 8207093998900579488}
+  - component: {fileID: 4487623367435747785}
+  - component: {fileID: 5177775728802755392}
+  - component: {fileID: 2792399466958887901}
+  - component: {fileID: 2696078065952846889}
+  - component: {fileID: 5616496602037353078}
   m_Layer: 0
   m_Name: stone7_fbx
   m_TagString: Untagged
@@ -21,36 +21,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &775925801214484019
+--- !u!4 &8207093998900579488
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112436931534734473}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 31.8, y: 3.5, z: -1.0773277}
-  m_LocalScale: {x: 30, y: 30, z: 30}
-  m_ConstrainProportionsScale: 1
+  m_GameObject: {fileID: 8696898267526010787}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 24.63, y: 2.19, z: 0.23}
+  m_LocalScale: {x: 100, y: 30, z: 10}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4425771740466778518
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &4487623367435747785
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112436931534734473}
+  m_GameObject: {fileID: 8696898267526010787}
   m_Mesh: {fileID: 6869500304094030284, guid: cfc6f2e3bfce20e478b856368ed4e37a, type: 3}
---- !u!23 &1913898703755470172
+--- !u!23 &5177775728802755392
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112436931534734473}
+  m_GameObject: {fileID: 8696898267526010787}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,26 +86,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2432306522176886084
+--- !u!65 &2792399466958887901
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112436931534734473}
+  m_GameObject: {fileID: 8696898267526010787}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.10288591, y: 0.3633865, z: 0.32136708}
   m_Center: {x: 0.058617193, y: 0.000058673322, z: 0.0382156}
---- !u!54 &6243079974133147413
+--- !u!54 &2696078065952846889
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112436931534734473}
+  m_GameObject: {fileID: 8696898267526010787}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -115,17 +115,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &-8568320166704477804
+--- !u!114 &5616496602037353078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112436931534734473}
+  m_GameObject: {fileID: 8696898267526010787}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae96f31fb59cfeb43a0aad84b1a6eb8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  BoundaryX: -15

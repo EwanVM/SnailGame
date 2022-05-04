@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1167565323647485135}
   - component: {fileID: 4246192288688585785}
   - component: {fileID: 8566444934761976184}
-  - component: {fileID: 3053142647420528777}
+  - component: {fileID: -3157798586812462577}
   m_Layer: 0
   m_Name: stone2_fbx
   m_TagString: Untagged
@@ -115,7 +115,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3493113, y: 0.24362595, z: 0.43851745}
   m_Center: {x: -0.3060457, y: -0.038373, z: 0.15652955}
---- !u!114 &3053142647420528777
+--- !u!114 &-3157798586812462577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,3 +128,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  BoundaryX: -28
