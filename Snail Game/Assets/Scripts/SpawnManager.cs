@@ -9,16 +9,18 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        InvokeRepeating("SpawnRandomStone", 1, 2.5f);
     }
 
     // Update is called once per frame
     void Update()
-    {if (Input.GetKeyDown(KeyCode.S))
-        {
-            int stoneIndex = Random.Range(0, stonePrefabs.Length);
-            Instantiate(stonePrefabs[stoneIndex], new Vector3(24, 2, Random.Range()), stonePrefabs[stoneIndex].transform.rotation);
-        }
-        
+    {
+
+    }
+
+    void SpawnRandomStone()
+    {
+        int stoneIndex = Random.Range(0, stonePrefabs.Length);
+        Instantiate(stonePrefabs[stoneIndex], new Vector3(50, 5, Random.Range(-spawnRangeZ, spawnRangeZ)), stonePrefabs[stoneIndex].transform.rotation);
     }
 }
