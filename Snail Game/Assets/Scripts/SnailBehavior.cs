@@ -10,7 +10,7 @@ public class SnailBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -19,8 +19,8 @@ public class SnailBehavior : MonoBehaviour
         //horizontalInput = Input.GetAxis("Horizontal");
         //transform.Translate(Vector3.forward * Time.deltaTime * speed * -horizontalInput);
         forwardInput = Input.GetAxis("Vertical");
-        
-        
+
+
         transform.Translate(Vector3.left * Time.deltaTime * speed * -forwardInput); //issuw with this line
 
         if (transform.position.z < -zRange)
@@ -32,5 +32,13 @@ public class SnailBehavior : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, zRange);
         }
 
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.gameObject.CompareTag("stone"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -2282958250219404187}
   m_Layer: 0
   m_Name: stone6_fbx
-  m_TagString: Untagged
+  m_TagString: stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
