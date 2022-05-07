@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class StoneCode : MonoBehaviour
 {
-    private float Speed = 10.0f;
-    private float acceleration = 10.0f;
-    private float maxSpeed = 60.0f;
+    private float Speed = 20.0f;
     private float BoundaryX = -40f;
     // Start is called before the first frame update
     void Start()
@@ -19,13 +17,11 @@ public class StoneCode : MonoBehaviour
         // Move Vehicle Forward
         // Vector*Time*Meters per second
         transform.Translate(Vector3.left * Speed * Time.deltaTime);
-        Speed += acceleration * Time.deltaTime;
-        if (Speed > maxSpeed)
-            Speed = maxSpeed;
             
         if (transform.position.x < BoundaryX)
         {
             Destroy(gameObject);
+            
         }
     }
 }

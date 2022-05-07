@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class SnailBehavior : MonoBehaviour
 {
-    public float speed = 10.0f;
-    public float zRange;
+    public float speed = 15.0f;
+    private float zRange = 12;
+    public bool Death;
     private float forwardInput;
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,8 @@ public class SnailBehavior : MonoBehaviour
         if (collision.collider.gameObject.CompareTag("stone"))
         {
             Destroy(gameObject);
+            
+            
         }
     }
 }

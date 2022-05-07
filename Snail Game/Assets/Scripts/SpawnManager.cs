@@ -6,12 +6,11 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] stonePrefabs;
     private float spawnRangeZ = 10;
-    private bool stoneSpawner;
     // Start is called before the first frame update
     void Start()
     {
-        stoneSpawner = true;
-        InvokeRepeating("SpawnRandomStone", 1, 2.5f);
+        InvokeRepeating("SpawnRandomStone", 0, 1.5f);
+
     }
 
     // Update is called once per frame
