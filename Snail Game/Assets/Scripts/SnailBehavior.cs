@@ -6,24 +6,16 @@ public class SnailBehavior : MonoBehaviour
 {
     public float speed = 15.0f;
     private float zRange = 12;
-    public bool Death;
     private float forwardInput;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
-        //horizontalInput = Input.GetAxis("Horizontal");
-        //transform.Translate(Vector3.forward * Time.deltaTime * speed * -horizontalInput);
         forwardInput = Input.GetAxis("Vertical");
 
-
-        transform.Translate(Vector3.left * Time.deltaTime * speed * -forwardInput); //issuw with this line
-
+        // Makes the snail move up and dowm
+        transform.Translate(Vector3.left * Time.deltaTime * speed * -forwardInput); 
+        // Adds boundaries so the snail cant fall of the world
         if (transform.position.z < -zRange)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, -zRange);
@@ -36,7 +28,7 @@ public class SnailBehavior : MonoBehaviour
     }
 
     public void OnCollisionEnter(Collision collision)
-    {
+    { // when the snail collides with a stone it will destroy the snail
         if (collision.collider.gameObject.CompareTag("stone"))
         {
             Destroy(gameObject);
