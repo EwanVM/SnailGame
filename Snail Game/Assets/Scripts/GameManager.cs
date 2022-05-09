@@ -27,12 +27,7 @@ public class GameManager : MonoBehaviour
         timerText.text = "Time: " + roundSeconds;
         scoreText.text ="Your score is " + roundSeconds;
 
-        // if the game is over, the game over text and the score text will appear and the timer text will disappear
-        if (GameOver == true)
-        {
-            
-        }
-
+        
      // If the snail object is no longer in the game (null) the game will enter the game over state
         if (Snail == null)
         {          
