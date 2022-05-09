@@ -9,11 +9,11 @@ public class GameManager : MonoBehaviour
     private float time; // Variable for time
     private float roundSeconds; // Variable for rounding time to the nearest whole number
     private bool GameOver = false; // The starting game state will be GameOver = false
-    public TextMeshProUGUI timerText; // Timer text
-    public TextMeshProUGUI gameOver; // Game over text
-    public TextMeshProUGUI scoreText; // Score text
-    public GameObject Spawner; // Links the object which controls the spawner with the game manager script which enables the game manager to alter it
-    public GameObject Snail; // Links the player with the script so the script can detect when it is altered
+    public TextMeshProUGUI timerText; 
+    public TextMeshProUGUI gameOver; 
+    public TextMeshProUGUI scoreText; 
+    public GameObject Spawner; // Links spawner with game manager script
+    public GameObject Snail; // Links snail with game manager script
     
     // Update is called once per frame
     void Update()
@@ -30,16 +30,17 @@ public class GameManager : MonoBehaviour
         // if the game is over, the game over text and the score text will appear and the timer text will disappear
         if (GameOver == true)
         {
-            gameOver.gameObject.SetActive(true);
-            timerText.gameObject.SetActive(false);
-            scoreText.gameObject.SetActive(true);
-            Destroy(Spawner);
+            
         }
 
      // If the snail object is no longer in the game (null) the game will enter the game over state
         if (Snail == null)
         {          
-            GameOver = true;            
+            GameOver = true;
+            gameOver.gameObject.SetActive(true);
+            timerText.gameObject.SetActive(false);
+            scoreText.gameObject.SetActive(true);
+            Destroy(Spawner);
         }
     }
 }
