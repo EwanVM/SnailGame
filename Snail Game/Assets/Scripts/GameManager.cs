@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
         }
 
         roundSeconds = (float)Math.Round(time, 0);
-        timerText.text = "Time: " + roundSeconds;
+        timerText.text = "Time: " + time;
         scoreText.text ="Your score is " + roundSeconds;
 
         
